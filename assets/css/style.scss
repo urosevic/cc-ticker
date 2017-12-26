@@ -1,0 +1,92 @@
+.cctw {
+	// Table Body
+	tbody {
+		th {
+			vertical-align: middle;
+			.currency {
+				display: inline-block;
+				position: relative;
+				border: 0;
+				// Cryptocurrency Icons
+				&.ico {
+					background-size: 20px;
+					background-repeat: no-repeat;
+					background-position: center left;
+					padding-left: 25px;
+					min-height: 20px;
+				}
+			}
+			a {
+				border: 0;
+				box-shadow: none;
+			}
+		}
+		// Table Cells
+		td {
+			text-align: right;
+			vertical-align: middle;
+			font-size: 1rem;
+			.amount {
+				clear: both;
+				&.up { color: #60C27B; }
+				&.down { color: #A11B0A; }
+				&.unchanged { color: #2D4F79; }
+				.change {
+					clear: both;
+					font-size: 0.6rem;
+					display: block;
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+	// Table Footer
+	tfoot tr {
+		// background-color: rgba(51, 51, 51, 0.1);
+		td {
+			font-size: 1rem;
+			text-align: center;
+			vertical-align: middle;
+			// Dellay msg in convent
+			span {
+				&.dellay {
+					float: right;
+					margin-left: 1rem;
+				}
+				&.coinbase {
+					float: left;
+					margin-right: 1rem;
+				}
+			}
+			// Inside WP Widget (narrow)
+			.widget_wpau_cryptocurrency_ticker & {
+				clear: both;
+				text-align: right;
+				font-size: 0.8rem;
+				.coinbase,
+				.dellay {
+					margin: 0;
+					display: block;
+					float: none;
+				}
+			}
+		}
+	}
+
+}
+@media screen and (max-width: 750px) {
+	.cctw {
+		tfoot {
+			tr {
+				td {
+					text-align: right;
+					span {
+						float: none!important;
+						margin: 0!important;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
