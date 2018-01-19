@@ -5,7 +5,7 @@
  * Plugin URI: https://urosevic.net/wordpress/plugins/cc-ticker/
  * Author: Aleksandar Urošević
  * Author URI: https://urosevic.net
- * Version: 1.0
+ * Version: 1.0.1
  * License: GPL3 or later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: cc-ticker
@@ -41,8 +41,8 @@ if ( ! class_exists( 'Wpau_Cryptocurrency_Ticker' ) ) {
 			self::$upload_dir_path = $wp_upload_dir['basedir'] . '/cc-ticker';
 			self::$upload_dir_url = $wp_upload_dir['baseurl'] . '/cc-ticker';
 			$this->messages = array(
-				'dellay' => sprintf(
-					__( 'Quotes dellayed up to %s minutes', 'cc-ticker' ),
+				'delay' => sprintf(
+					__( 'Quotes delayed up to %s minutes', 'cc-ticker' ),
 					$this->cache_timeout
 				),
 				'attribution' => sprintf(
@@ -248,16 +248,16 @@ if ( ! class_exists( 'Wpau_Cryptocurrency_Ticker' ) ) {
 			if ( ! empty( $atts['nolink'] ) ) {
 				$attribution = ' ' . $this->messages['attribution'];
 			}
-			// Prepare Dellay message
-			$dellay = sprintf(
-				'<span class="dellay">%1$s%2$s</span>',
-				$this->messages['dellay'],
+			// Prepare Delay message
+			$delay = sprintf(
+				'<span class="delay">%1$s%2$s</span>',
+				$this->messages['delay'],
 				$attribution
 			);
 			// Append CryptoCompare.com attribution
 			$html .= sprintf(
 				'<tfoot><tr><td colspan="2">%1$s %2$s</td></tr></tfoot>',
-				$dellay,      // 1
+				$delay,      // 1
 				$coinbase     // 2
 			);
 

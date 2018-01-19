@@ -3,8 +3,8 @@ Contributors: urkekg
 Donate link: https://urosevic.net/wordpress/donate/?donate_for=cc-ticker
 Tags: bitcoin, litecoin, ethereum, cryptocurrency, coin, ticker, quote, cryptocompare
 Requires at least: 4.4
-Tested up to: 4.9.1
-Stable tag: 1.0
+Tested up to: 4.9.2
+Stable tag: 1.0.1
 Requires PHP: 5.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -59,7 +59,7 @@ To customize how ticker looks like, you can use following CSS classes to target 
 * `.price` - element that contain price value
 * `.currency` - element that contain currency symbol as a part of `.price`
 * `.change` - element that contains change value (amount and percentage)
-* `.dellay` - element that contains info about dellayed quotes
+* `.delay` - element that contains info about delayed quotes
 * `.coinbase` - element that contains referral link to Coin Base
 
 == Installation ==
@@ -82,7 +82,7 @@ You can freely override basic CSS styles with custom CSS. Add customization to `
 
 = Are those cryptocurrency prices live? =
 
-Quotes are dellayed up to 2 minutes. To prevent overloaded requests to Crypto Compare API, we cache responses for two minutes in local WordPress.
+Quotes are delayed up to 2 minutes. To prevent overloaded requests to Crypto Compare API, we cache responses for two minutes in local WordPress.
 
 = Can I use a Referrer ID from Coin Base? =
 
@@ -110,6 +110,10 @@ Feel free to buy me some beer (or wine) for more cool free plugins.
 * This is initial release of fresh new plugin.
 
 == ChangeLog ==
+
+= 1.0.1 =
+
+* Fix spelling
 
 = 1.0 =
 

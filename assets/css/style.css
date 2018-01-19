@@ -1,2 +1,61 @@
-.cctw tbody th{vertical-align:middle}.cctw tbody th .currency{display:inline-block;position:relative;border:0}.cctw tbody th .currency.ico{background-size:20px;background-repeat:no-repeat;background-position:center left;padding-left:25px;min-height:20px}.cctw tbody th a{border:0;box-shadow:none}.cctw tbody td{text-align:right;vertical-align:middle;font-size:1rem}.cctw tbody td .amount{clear:both}.cctw tbody td .amount.up{color:#60C27B}.cctw tbody td .amount.down{color:#A11B0A}.cctw tbody td .amount.unchanged{color:#2D4F79}.cctw tbody td .amount .change{clear:both;font-size:0.6rem;display:block;opacity:0.8}.cctw tfoot tr td{font-size:1rem;text-align:center;vertical-align:middle}.cctw tfoot tr td span.dellay{float:right;margin-left:1rem}.cctw tfoot tr td span.coinbase{float:left;margin-right:1rem}.widget_wpau_cryptocurrency_ticker .cctw tfoot tr td{clear:both;text-align:right;font-size:0.8rem}.widget_wpau_cryptocurrency_ticker .cctw tfoot tr td .coinbase,.widget_wpau_cryptocurrency_ticker .cctw tfoot tr td .dellay{margin:0;display:block;float:none}@media screen and (max-width: 750px){.cctw tfoot tr td{text-align:right}.cctw tfoot tr td span{float:none !important;margin:0 !important;display:block}}
+.cctw tbody th {
+  vertical-align: middle; }
+  .cctw tbody th .currency {
+    display: inline-block;
+    position: relative;
+    border: 0; }
+    .cctw tbody th .currency.ico {
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: center left;
+      padding-left: 25px;
+      min-height: 20px; }
+  .cctw tbody th a {
+    border: 0;
+    box-shadow: none; }
+.cctw tbody td {
+  text-align: right;
+  vertical-align: middle;
+  font-size: 1rem; }
+  .cctw tbody td .amount {
+    clear: both; }
+    .cctw tbody td .amount.up {
+      color: #60C27B; }
+    .cctw tbody td .amount.down {
+      color: #A11B0A; }
+    .cctw tbody td .amount.unchanged {
+      color: #2D4F79; }
+    .cctw tbody td .amount .change {
+      clear: both;
+      font-size: 0.6rem;
+      display: block;
+      opacity: 0.8; }
+.cctw tfoot tr td {
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle; }
+  .cctw tfoot tr td span.delay {
+    float: right;
+    margin-left: 1rem; }
+  .cctw tfoot tr td span.coinbase {
+    float: left;
+    margin-right: 1rem; }
+  .widget_wpau_cryptocurrency_ticker .cctw tfoot tr td {
+    clear: both;
+    text-align: right;
+    font-size: 0.8rem; }
+    .widget_wpau_cryptocurrency_ticker .cctw tfoot tr td .coinbase,
+    .widget_wpau_cryptocurrency_ticker .cctw tfoot tr td .delay {
+      margin: 0;
+      display: block;
+      float: none; }
+
+@media screen and (max-width: 750px) {
+  .cctw tfoot tr td {
+    text-align: right; }
+    .cctw tfoot tr td span {
+      float: none !important;
+      margin: 0 !important;
+      display: block; } }
+
 /*# sourceMappingURL=style.css.map */
